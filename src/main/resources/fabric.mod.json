@@ -19,7 +19,7 @@
   "environment": "*",
   "entrypoints": {
     "stationapi:event_bus": [
-      "ralf2oo2.trax.events.init.InitListener"
+      "ralf2oo2.trax.events.init.DataReloadListener"
     ],
     "stationapi:event_bus_client": [
       "ralf2oo2.trax.events.ingame.KeyStateChangedListener"

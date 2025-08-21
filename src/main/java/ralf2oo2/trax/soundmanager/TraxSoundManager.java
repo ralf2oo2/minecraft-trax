@@ -1,11 +1,16 @@
 package ralf2oo2.trax.soundmanager;
 
+import ralf2oo2.trax.TraxSong;
+
 import java.io.File;
+import java.util.List;
 
 public interface TraxSoundManager {
-    void loadTrack(String id, File soundFile);
+    void loadTrack(TraxSong traxSong);
 
-    void playTrack(String id, float volume, float pitch);
+    void playTrack(TraxSong traxSong, float volume, float pitch);
+
+    List<TraxSong> getTraxSongs();
 
     int getTrackCount();
 }
